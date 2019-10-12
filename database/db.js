@@ -4,10 +4,10 @@ const housewares = require('./housewares.js');
 const accessories = require('./accessories.js');
 const toys = require('./toys.js');
 
-const { port } = require('../server/server.js')
-
 const mongoose = require('mongoose');
-mongoose.connect(`mongodb://localhost:${port}/products`, {useNewUrlParser: true})
+const host = 'mongo'
+// const host = 'localhost'
+mongoose.connect(`mongodb://${host}:27017/products`, {useNewUrlParser: true, useUnifiedTopology: true})
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -26,6 +26,14 @@ const imagesSchema = new mongoose.Schema({
   full_width: Number,
 })
 
+const optionsSchema = new mongoose.Schema({
+  title: String,
+  description_1: String,
+  description_2: String,
+  description_3: String,
+  description_4: String,
+})
+
 const productSchema = new mongoose.Schema({
   listing_id: { // <-- product id
     type: Number,
@@ -41,31 +49,9 @@ const productSchema = new mongoose.Schema({
     shop_name: String,
     title: String,
     icon_url_fullxfull: String,
+    custom_shops_state: Number,
   },
-  
-  product_options: {
-    option_1: {
-      title: String,
-      description_1: String,
-      description_2: String,
-      description_3: String,
-      description_4: String,
-    },
-    option_2: {
-      title: String,
-      description_1: String,
-      description_2: String,
-      description_3: String,
-      description_4: String,
-    },
-    option_3: {
-      title: String,
-      description_1: String,
-      description_2: String,
-      description_3: String,
-      description_4: String,
-    },
-  },
+  product_options: [optionsSchema],
 });
 
 const Products = mongoose.model('Products', productSchema);
@@ -84,7 +70,39 @@ const productsSave = products => {
     })
 }
 
-productsSave(jewelry.results);
-productsSave(housewares.results);
-productsSave(accessories.results);
-productsSave(toys.results);
+const findProduct = async (id) => {
+  const product = await Products.findOne(id)
+    .catch(error => {
+      return ("error of ", error)
+    })
+  return product
+}
+
+const findAllProducts = async () => {
+  const products = await Products.find()
+    .catch(error => {
+      return ("error of ", error)
+    })
+  return products
+}
+
+let initialized = false;
+
+const initializeProducts = () => {
+  productsSave(jewelry.results);
+  productsSave(housewares.results);
+  productsSave(accessories.results);
+  productsSave(toys.results);
+  initialized = true
+  return initialized;
+}
+
+if (!initialized) {
+  initializeProducts();
+}
+
+
+module.exports = {
+  findProduct,
+  findAllProducts
+}

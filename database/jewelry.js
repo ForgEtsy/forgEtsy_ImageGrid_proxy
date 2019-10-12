@@ -18,6 +18,13 @@ module.exports = {
         "used_manufacturer": false,
         "sku": [],
         "is_vintage": true,
+        "product_options": [
+            {
+                title: "Style",
+                description_1: "standard",
+                description_2: "black",
+            },
+        ],
         "Images": [
             {
                 "listing_image_id": 540562651,
@@ -184,6 +191,7 @@ module.exports = {
         "used_manufacturer": false,
         "sku": [],
         "is_vintage": false,
+        "product_options": null,
         "Images": [
             {
                 "listing_image_id": 2038832488,
@@ -269,6 +277,15 @@ module.exports = {
         "used_manufacturer": false,
         "sku": [],
         "is_vintage": false,
+        "product_options": [
+            {
+                title: "Metal",
+                description_1: "Stainless Steel",
+                description_2: "Silver + $20",
+                description_3: "Brass",
+                description_4: "Gold + $50",
+            },
+        ],
         "Images": [
             {
                 "listing_image_id": 1892274526,
@@ -375,6 +392,14 @@ module.exports = {
         "used_manufacturer": false,
         "sku": [],
         "is_vintage": true,
+        "product_options": [
+            {
+                title: "Gold",
+                description_1: "Standard",
+                description_2: "Rose Gold",
+                description_3: "White Gold",
+            },
+        ],
         "Images": [
             {
                 "listing_image_id": 2038811298,
@@ -540,7 +565,20 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Charm",
+                description_1: "Tahoe Lake Pendant",
+                description_2: "Lake Tahoe Charm",
+                description_3: "Tahoe Heart Pendant",
+            },
+            {
+              title: "Metal",
+              description_1: "Sterling Silver",
+              description_2: "White Gold + $20",
+          },
+        ],         "Images": [
               {
                   "listing_image_id": 1885262780,
                   "hex_code": "82B2B9",
@@ -686,7 +724,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 1091843684,
                   "hex_code": "67564F",
@@ -832,7 +872,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 1528376771,
                   "hex_code": "CCCBCB",
@@ -1025,7 +1067,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 2086439571,
                   "hex_code": null,
@@ -1170,7 +1214,28 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Small Sizes",
+                description_1: "5",
+                description_2: "6",
+                description_3: "7",
+            },
+            {
+              title: "Medium Sizes",
+              description_1: "8",
+              description_2: "9",
+              description_3: "10",
+            },
+            {
+              title: "Large Sizes",
+              description_1: "11",
+              description_2: "12",
+              description_3: "13",
+            },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 1488622848,
                   "hex_code": "6E6A5E",
@@ -1296,7 +1361,14 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Size",
+                description_1: "One size fits most",
+            },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 2086442739,
                   "hex_code": null,
@@ -1381,7 +1453,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 1989938865,
                   "hex_code": "997467",
@@ -1648,7 +1722,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 1744082098,
                   "hex_code": "858886",
@@ -1755,7 +1831,13 @@ module.exports = {
               "S49B9-01"
           ],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Measurements",
+                description_1: "approx: 29x25mm - 41x32mm",
+            },
+        ],         "Images": [
               {
                   "listing_image_id": 1924789421,
                   "hex_code": "63606F",
@@ -1883,7 +1965,9 @@ module.exports = {
               "N031591"
           ],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,     
+        "Images": [
               {
                   "listing_image_id": 1597522372,
                   "hex_code": "F8F8F8",
@@ -2009,7 +2093,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,       
+        "Images": [
               {
                   "listing_image_id": 2038831650,
                   "hex_code": null,
@@ -2154,7 +2240,17 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Leather Color",
+                description_1: "Standard",
+                description_2: "Chocolate",
+                description_3: "Burgundy",
+                description_4: "Black",
+            },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 1656099040,
                   "hex_code": "AF9578",
@@ -2319,7 +2415,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,      
+        "Images": [
               {
                   "listing_image_id": 2038831500,
                   "hex_code": null,
@@ -2405,7 +2503,17 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Style",
+                description_1: "10KT Solid",
+                description_2: "14KT Solid Gold",
+                description_3: "18KT Solid Gold",
+                description_4: "Platinum",
+            },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 2038533328,
                   "hex_code": "B8B1AC",
@@ -2535,7 +2643,7 @@ module.exports = {
       {
           "listing_id": 508354965,
           "title": "Mens ring, Unique Mens ring, Men Wedding Band, Unique Men Ring, Mens wedding ring, Gift for men, Silver & Copper Ring, RS-1081",
-          "description": "A dual tone ring that is as striking as it is symbolic makes this silver copper piece the ultimate gift for him. The handcrafted textured details and exclusive black silver color make this wide ring the perfect wedding band for everyday use. At the center of the ring is a thin copper continuous strip emphasizing the infinite union this ring represents.\n\nThis piece is packed in a beautiful jewelry box, and is ready to be given as a meaningful gift.\n\nINFO\n◆ Sterling Silver and Copper\n◆ Sizes 4-16 (US)\n◆ Width: 8mm, also available as 6mm 7mm or 9mm\n◆ The beautiful copper detail has no direct contact with skin\n◆Thickness: 2.5mm approximately\n\n\nFor precise size\nI highly recommend you have your finger sized by reputable jeweler in your area.\nAnd let him know the ring width you&#39;re interested in.\nIf your ring width is 6 mm or wider, have use a wide band ring sizer.\n\n\n◆Engraving -\n I'd be happy to add a personal engraving. To make your unique ring even more special, please add the following item to your cart:  www.etsy.com/listing/507947456\n\n\nPlease note, the ring is handmade, the coating levels and texture marks can vary from one ring to the next.\n\n\n\n◆ FREE SHIPPING WORLDWIDE \nYou package will arrive approximately within 4-7 business days to most destinations.\nIf you wish to upgrade to express shipping at an extra cost, please do so by upgrading your shipping options at checkout ◆\n\nLooking for more men's rings? http://etsy.me/2fT3XXs\n\nFor more handmade jewelry, please visit:  https://www.etsy.com/shop/AbiMJewelry \n\n◆ Have any questions? Please do not hesitate to contact me!\n\nThank you for visiting my shop,\nAbi",
+          "description": "A dual tone ring that is as striking as it is symbolic makes this silver copper piece the ultimate gift for him. The handcrafted textured details and exclusive black silver color make this wide ring the perfect wedding band for everyday use. At the center of the ring is a thin copper continuous strip emphasizing the infinite union this ring represents.\n\nThis piece is packed in a beautiful jewelry box, and is ready to be given as a meaningful gift.\n\nINFO\n◆ Sterling Silver and Copper\n◆ Sizes 8-16 (US)\n◆ Width: 8mm, also available as 6mm 7mm or 9mm\n◆ The beautiful copper detail has no direct contact with skin\n◆Thickness: 2.5mm approximately\n\n\nFor precise size\nI highly recommend you have your finger sized by reputable jeweler in your area.\nAnd let him know the ring width you&#39;re interested in.\nIf your ring width is 6 mm or wider, have use a wide band ring sizer.\n\n\n◆Engraving -\n I'd be happy to add a personal engraving. To make your unique ring even more special, please add the following item to your cart:  www.etsy.com/listing/507947456\n\n\nPlease note, the ring is handmade, the coating levels and texture marks can vary from one ring to the next.\n\n\n\n◆ FREE SHIPPING WORLDWIDE \nYou package will arrive approximately within 4-7 business days to most destinations.\nIf you wish to upgrade to express shipping at an extra cost, please do so by upgrading your shipping options at checkout ◆\n\nLooking for more men's rings? http://etsy.me/2fT3XXs\n\nFor more handmade jewelry, please visit:  https://www.etsy.com/shop/AbiMJewelry \n\n◆ Have any questions? Please do not hesitate to contact me!\n\nThank you for visiting my shop,\nAbi",
           "price": "240.00",
           "category_path": [
               "Jewelry",
@@ -2553,7 +2661,28 @@ module.exports = {
               "RS-1081"
           ],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+          {
+            title: "Small Sizes",
+            description_1: "8",
+            description_2: "9",
+            description_3: "10",
+        },
+        {
+          title: "Medium Sizes",
+          description_1: "11",
+          description_2: "12",
+          description_3: "13",
+        },
+        {
+          title: "Large Sizes",
+          description_1: "14",
+          description_2: "15",
+          description_3: "16",
+        },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 1143060830,
                   "hex_code": "776E61",
@@ -2781,7 +2910,9 @@ module.exports = {
               "DS1066"
           ],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 2086442993,
                   "hex_code": "85809F",
@@ -2987,7 +3118,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,        
+        "Images": [
               {
                   "listing_image_id": 1343288259,
                   "hex_code": "47755C",
@@ -3132,7 +3265,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": true,
-          "Images": [
+ 
+        "product_options": null,        
+        "Images": [
               {
                   "listing_image_id": 2038816538,
                   "hex_code": "7393AF",
@@ -3237,7 +3372,9 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,        
+        "Images": [
               {
                   "listing_image_id": 2038828098,
                   "hex_code": null,
@@ -3364,7 +3501,17 @@ module.exports = {
           "used_manufacturer": false,
           "sku": [],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": [
+            {
+                title: "Style",
+                description_1: "Gold Plated Brass",
+                description_2: "14k Gold Filled",
+                description_3: "Silver Plated Brass", 
+                description_4: "Sterling Silver",
+            },
+        ],         
+        "Images": [
               {
                   "listing_image_id": 666690322,
                   "hex_code": "C1BFB9",
@@ -3490,7 +3637,9 @@ module.exports = {
               "15"
           ],
           "is_vintage": false,
-          "Images": [
+ 
+        "product_options": null,
+        "Images": [
               {
                   "listing_image_id": 2019666822,
                   "hex_code": "897965",
