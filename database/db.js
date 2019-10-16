@@ -1,4 +1,3 @@
-// double check file path
 const jewelry = require('./jewelry.js');
 const housewares = require('./housewares.js');
 const accessories = require('./accessories.js');
@@ -62,12 +61,17 @@ const productsSave = products => {
       console.log('...Saved products to database...')
       return data
     })
-    .then((data) => {
-      // populate component with data
-    })
     .catch((err) => {
       console.log('...product saving err... ');
     })
+}
+
+const findCombinedProductsforID = async (id) => {
+  const product = await findProduct(id)
+  category = product.category_path
+  const relatedProducts = await findRelatedProducts(category);
+  const addlShopProducts = await findShopProducts()
+  return [product, relatedProducts, addlShopProducts]
 }
 
 const findProduct = async (id) => {
@@ -83,6 +87,23 @@ const findAllProducts = async () => {
     .catch(error => {
       return ("error of ", error)
     })
+  return products
+}
+
+const findRelatedProducts = async () => {
+  const products = await Products.find({category_path : category[0]}).limit(5)
+    .catch(error => {
+      return ("error of ", error)
+    })
+  return products
+}
+
+const findShopProducts = async () => {
+  const returnQty = Math.round(Math.random()) === 0 ? 5 : 10;
+  const products = await Products.aggregate().sample(returnQty)
+  .catch(error => {
+    return ("error of ", error)
+  })
   return products
 }
 
@@ -104,5 +125,8 @@ if (!initialized) {
 
 module.exports = {
   findProduct,
-  findAllProducts
+  findAllProducts,
+  findRelatedProducts,
+  findShopProducts,
+  findCombinedProductsforID
 }

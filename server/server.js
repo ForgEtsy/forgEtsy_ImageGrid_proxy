@@ -10,8 +10,16 @@ const db = require("../database/db")
 
 const PORT = 3001;
 
-app.get("/products", (req, res) => {
+app.get("/allproducts", (req, res) => {
   db.findAllProducts()
+  .then(product => res.send(product))
+  .catch((err) => {
+    res.status(400).send("couldnt return those records")
+  })
+})
+
+app.get("/moreshopproducts", (req, res) => {
+  db.findShopProducts()
   .then(product => res.send(product))
   .catch((err) => {
     res.status(400).send("couldnt return those records")
@@ -20,7 +28,7 @@ app.get("/products", (req, res) => {
 
 app.get("/product/:listing_id", (req, res) => {
   const listingID = req.params
-  db.findProduct(listingID)
+  db.findCombinedProductsforID(listingID)
   .then(product => res.send(product))
   .catch((err) => {
     res.status(400).send("couldnt find that record")
