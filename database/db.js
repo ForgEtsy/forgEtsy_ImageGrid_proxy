@@ -71,7 +71,7 @@ const findCombinedProductsforID = async (id) => {
   category = product.category_path
   const relatedProducts = await findRelatedProducts(category);
   const addlShopProducts = await findShopProducts()
-  return [product, relatedProducts, addlShopProducts]
+  return [product, addlShopProducts, relatedProducts]
 }
 
 const findProduct = async (id) => {
@@ -91,7 +91,8 @@ const findAllProducts = async () => {
 }
 
 const findRelatedProducts = async () => {
-  const products = await Products.find({category_path : category[0]}).limit(5)
+  const returnQty = Math.round(Math.random()) === 0 ? 5 : 10;
+  const products = await Products.find({category_path : category[0]}).limit(returnQty)
     .catch(error => {
       return ("error of ", error)
     })
@@ -99,7 +100,7 @@ const findRelatedProducts = async () => {
 }
 
 const findShopProducts = async () => {
-  const returnQty = Math.round(Math.random()) === 0 ? 5 : 10;
+  const returnQty = 5;
   const products = await Products.aggregate().sample(returnQty)
   .catch(error => {
     return ("error of ", error)
