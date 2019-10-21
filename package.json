@@ -21,8 +21,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.0",
-    "mongoose": "^5.5.14"
+    "express": "^4.17.0"
   },
   "devDependencies": {
     "live-server": "^1.2.1",
