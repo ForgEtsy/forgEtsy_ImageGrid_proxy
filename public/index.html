@@ -22,13 +22,19 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="searchHeader"></div>
-    <main style="display: flex; flex-wrap: nowrap;">
-      <div class="left">
+    <div id="searchHeader" style="margin: 0 5%"></div>
+    <main
+      style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'Left Left Right';
+      margin: 0 5%"
+    >
+      <div class="left" style="grid-area: Left;">
         <div id="carousel"></div>
         <div id="reviews"></div>
       </div>
-      <div class="right">
+      <div class="right" style="grid-area: Right;">
         <div id="productDescription"></div>
       </div>
     </main>
@@ -38,6 +44,7 @@
     <script src="https://forgetsygrid.s3.us-east-2.amazonaws.com/header.runtime-main.js"></script>
     <script src="http://ec2-18-219-198-117.us-east-2.compute.amazonaws.com/bundle.js"></script>
     <script src="http://ec2-3-17-4-56.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://ec2-18-224-213-224.us-east-2.compute.amazonaws.com//bundle.js"></script>
     <script src="https://forgetsygrid.s3.us-east-2.amazonaws.com/grid.chunk.js"></script>
     <script src="https://forgetsygrid.s3.us-east-2.amazonaws.com/grid.main.chunk.js"></script>
     <script src="https://forgetsygrid.s3.us-east-2.amazonaws.com/grid.runtime-main.js"></script>
